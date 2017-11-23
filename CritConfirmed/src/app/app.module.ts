@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CharactersComponent } from './characters/characters.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharactersComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, CharactersComponent]
 })
 export class AppModule { }
